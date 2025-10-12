@@ -38,7 +38,6 @@ const ProblemSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-red-100 px-4 py-2 rounded-full mb-6">
               <AlertTriangle className="w-5 h-5 text-red-600" />
@@ -54,7 +53,6 @@ const ProblemSection = () => {
             </p>
           </motion.div>
 
-          {/* Problem Context with Background Image */}
           {backgroundImageLoaded && (
             <motion.div 
               variants={itemVariants}
@@ -81,7 +79,6 @@ const ProblemSection = () => {
             </motion.div>
           )}
 
-          {/* Key Statistics */}
           <motion.div 
             variants={itemVariants}
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
@@ -105,7 +102,6 @@ const ProblemSection = () => {
             ))}
           </motion.div>
 
-          {/* Problem Details */}
           <motion.div variants={itemVariants} className="mb-12">
             <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-12">
               The Problems Hurting Hotels Daily
@@ -153,7 +149,6 @@ const ProblemSection = () => {
             </div>
           </motion.div>
 
-          {/* Impact Statement */}
           <motion.div
             variants={itemVariants}
             className="bg-gradient-to-r from-red-600 to-orange-600 rounded-3xl p-8 lg:p-12 text-center text-white"

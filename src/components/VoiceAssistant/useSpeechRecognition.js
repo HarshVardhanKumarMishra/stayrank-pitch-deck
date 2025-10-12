@@ -13,10 +13,9 @@ export default function useSpeechRecognition({ lang = "en-US" } = {}) {
     console.log("🎤 SpeechRecognition initialized:", recognition);
     recognition.lang = lang;
     recognition.continuous = false;
-    recognition.interimResults = false; // only capture final results
+    recognition.interimResults = false; 
 
     recognition.onresult = (e) => {
-      // Only use the last result and only if it's final
       const last = e.results[e.results.length - 1];
       if (last.isFinal) {
         state.transcript = last[0].transcript.trim();
@@ -55,7 +54,7 @@ export default function useSpeechRecognition({ lang = "en-US" } = {}) {
     stop: () => {
       if (supported && recognition && state.listening) {
         recognition.stop();
-        recognition.abort(); // force stop if Chrome tries to auto-restart
+        recognition.abort(); 
       }
     },
     clearTranscript: () => { state.transcript = ""; notify(); },

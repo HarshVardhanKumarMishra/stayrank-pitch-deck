@@ -1,5 +1,3 @@
-// Utility functions for the pitch deck
-
 export const formatCurrency = (amount, currency = '₹') => {
   if (amount >= 10000000) {
     return `${currency}${(amount / 10000000).toFixed(1)} Cr`;
@@ -85,12 +83,10 @@ export const hexToRgba = (hex, alpha = 1) => {
 };
 
 export const getContrastColor = (hexColor) => {
-  // Convert hex to RGB
   const r = parseInt(hexColor.slice(1, 3), 16);
   const g = parseInt(hexColor.slice(3, 5), 16);
   const b = parseInt(hexColor.slice(5, 7), 16);
 
-  // Calculate relative luminance
   const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
 
   return luminance > 0.5 ? '#000000' : '#ffffff';
@@ -128,7 +124,6 @@ export const isInViewport = (element) => {
   );
 };
 
-// Image loading utilities
 export const preloadImage = (src) => {
   return new Promise((resolve, reject) => {
     const img = new Image();

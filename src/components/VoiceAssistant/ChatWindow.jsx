@@ -44,13 +44,11 @@ useEffect(() => {
 
   return (
     <div className="w-80 h-96 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden">
-      {/* Header */}
       <div className="bg-blue-600 text-white px-3 py-2 flex items-center justify-between">
         <span className="font-medium">StayRank Assistant</span>
         <button onClick={onClose} aria-label="Close">✖</button>
       </div>
 
-      {/* Messages */}
       <div ref={listRef} className="flex-1 overflow-y-auto p-3 space-y-2">
         {messages.map((m, i) => (
           <div
@@ -64,7 +62,6 @@ useEffect(() => {
         ))}
       </div>
 
-      {/* Input */}
       <div className="p-3 flex gap-2 items-stretch">
         <input
           className="flex-1 border rounded-lg p-2"

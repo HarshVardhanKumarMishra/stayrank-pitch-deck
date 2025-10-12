@@ -21,10 +21,10 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-trust-50 pt-20 lg:pt-28">
-      {/* Background Elements */}
+     
       <div className="absolute inset-0 bg-pattern opacity-5" />
 
-      {/* Floating Elements */}
+      
       <motion.div
         className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-r from-primary-400 to-trust-400 rounded-full opacity-20"
         animate={{ y: [-20, 20, -20] }}
@@ -38,9 +38,9 @@ const HeroSection = () => {
 
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Content */}
+          
           <div className="text-center lg:text-left">
-            {/* Company Badge */}
+           
             <motion.div
               className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg mb-8"
               initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,6 @@ const HeroSection = () => {
               </span>
             </motion.div>
 
-            {/* Main Heading */}
             <motion.h1
               className="text-hero font-bold font-heading mb-6 text-gray-900"
               initial={{ opacity: 0, y: 30 }}
@@ -65,7 +64,6 @@ const HeroSection = () => {
               <span className="gradient-text">{pitchData.company.name}</span>
             </motion.h1>
 
-            {/* Typed Subtitle */}
             <motion.div
               className="text-section-title font-semibold mb-6 text-gray-700 min-h-[1.2em]"
               initial={{ opacity: 0, y: 20 }}
@@ -82,7 +80,6 @@ const HeroSection = () => {
               </motion.span>
             </motion.div>
 
-            {/* Description */}
             <motion.p
               className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
@@ -92,7 +89,6 @@ const HeroSection = () => {
               {pitchData.company.description}
             </motion.p>
 
-            {/* CTA Buttons */}
             <motion.div
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mb-12"
               initial={{ opacity: 0, y: 20 }}
@@ -119,7 +115,6 @@ const HeroSection = () => {
               </Button>
             </motion.div>
 
-            {/* Feature Icons */}
             <motion.div
               className="flex items-center justify-center lg:justify-start space-x-8 opacity-60"
               initial={{ opacity: 0 }}
@@ -141,7 +136,6 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Right Column - Hero Image */}
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -163,7 +157,6 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Stats Section */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16"
           initial={{ opacity: 0, y: 30 }}
@@ -190,7 +183,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}

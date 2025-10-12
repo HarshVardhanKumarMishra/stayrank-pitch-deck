@@ -13,7 +13,6 @@ app.post("/chat", async (req, res) => {
     const userText = (req.body?.message ?? "").toString().slice(0, 4000);
     if (!userText) return res.status(400).json({ error: "message required" });
 
-    // Use the Gemini API
     const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.GEMINI_API_KEY}`, {
       method: "POST",
       headers: {

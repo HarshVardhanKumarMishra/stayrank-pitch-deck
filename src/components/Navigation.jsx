@@ -43,7 +43,6 @@ const Navigation = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo with Brand Image */}
           <motion.div
             className="flex items-center space-x-3"
             whileHover={{ scale: 1.05 }}
@@ -65,7 +64,6 @@ const Navigation = () => {
             </div>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item, index) => (
               <motion.button
@@ -82,7 +80,6 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
           <div className="hidden lg:block">
             <Button
               onClick={() => handleNavClick('contact')}
@@ -93,7 +90,6 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <motion.button
             className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -108,7 +104,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

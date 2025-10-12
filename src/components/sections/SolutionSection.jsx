@@ -45,7 +45,6 @@ const SolutionSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-primary-100 px-4 py-2 rounded-full mb-6">
               <CheckCircle className="w-5 h-5 text-primary-600" />
@@ -61,7 +60,6 @@ const SolutionSection = () => {
             </p>
           </motion.div>
 
-          {/* Solution Hero Section with Check-in Image */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
@@ -110,7 +108,6 @@ const SolutionSection = () => {
             )}
           </motion.div>
 
-          {/* Main Features Grid */}
           <motion.div 
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
@@ -145,7 +142,6 @@ const SolutionSection = () => {
             ))}
           </motion.div>
 
-          {/* Unique Value Proposition */}
           <motion.div variants={itemVariants} className="mb-16">
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-primary-600 to-trust-600 text-white">
               <div className="text-center mb-8">
@@ -174,7 +170,6 @@ const SolutionSection = () => {
             </Card>
           </motion.div>
 
-          {/* Demo CTA */}
           <motion.div variants={itemVariants} className="text-center">
             <Card className="p-8 lg:p-12 bg-white border-2 border-primary-200">
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">

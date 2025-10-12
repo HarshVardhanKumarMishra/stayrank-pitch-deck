@@ -6,7 +6,7 @@ export const pitchData = {
     website: "stayrank.com",
     foundedBy: "Lodging Innovations Pvt. Ltd.",
     mission: "Check Before Check-in - Making hospitality safer, more profitable, and future-ready",
-    logo: "/src/assets/images/Brand_logo.jpg"
+    logo: "/src/assets/images/brand_logo.jpg"
   },
 
   problem: {

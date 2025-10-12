@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-// Hook for intersection observer
 export const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [hasIntersected, setHasIntersected] = useState(false);
@@ -34,7 +33,6 @@ export const useIntersectionObserver = (options = {}) => {
   return { elementRef, isIntersecting, hasIntersected };
 };
 
-// Hook for window scroll position
 export const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollDirection, setScrollDirection] = useState('up');
@@ -61,7 +59,6 @@ export const useScrollPosition = () => {
   return { scrollPosition, scrollDirection };
 };
 
-// Hook for window dimensions
 export const useWindowDimensions = () => {
   const [windowDimensions, setWindowDimensions] = useState({
     width: typeof window !== 'undefined' ? window.innerWidth : 0,
@@ -83,7 +80,6 @@ export const useWindowDimensions = () => {
   return windowDimensions;
 };
 
-// Hook for image loading
 export const useImageLoad = (src) => {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
@@ -114,7 +110,6 @@ export const useImageLoad = (src) => {
   return { loaded, error };
 };
 
-// Hook for local storage
 export const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState(() => {
     try {
@@ -139,7 +134,6 @@ export const useLocalStorage = (key, initialValue) => {
   return [storedValue, setValue];
 };
 
-// Hook for countdown timer
 export const useCountdown = (targetDate) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -176,7 +170,6 @@ export const useCountdown = (targetDate) => {
   return timeLeft;
 };
 
-// Hook for typing effect (manual implementation to avoid react-typed issues)
 export const useTypingEffect = (text, speed = 100) => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -202,7 +195,6 @@ export const useTypingEffect = (text, speed = 100) => {
   return { displayText, isTyping };
 };
 
-// Hook for mouse position
 export const useMousePosition = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -218,7 +210,6 @@ export const useMousePosition = () => {
   return mousePosition;
 };
 
-// Hook for previous value
 export const usePrevious = (value) => {
   const ref = useRef();
 
@@ -229,7 +220,6 @@ export const usePrevious = (value) => {
   return ref.current;
 };
 
-// Hook for toggle state
 export const useToggle = (initialValue = false) => {
   const [value, setValue] = useState(initialValue);
 

@@ -43,7 +43,6 @@ const TractionSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-primary-100 px-4 py-2 rounded-full mb-6">
               <Target className="w-5 h-5 text-primary-600" />
@@ -59,7 +58,6 @@ const TractionSection = () => {
             </p>
           </motion.div>
 
-          {/* Key Metrics */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {tractionData.metrics.map((metric, index) => (
               <Card key={index} className="p-8 text-center" hover={true}>
@@ -80,7 +78,6 @@ const TractionSection = () => {
             ))}
           </motion.div>
 
-          {/* Roadmap */}
           <motion.div variants={itemVariants} className="mb-16">
             <Card className="p-8">
               <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-12">
@@ -88,7 +85,6 @@ const TractionSection = () => {
               </h3>
 
               <div className="relative">
-                {/* Timeline Line */}
                 <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-trust-500 hidden lg:block" />
 
                 <div className="space-y-8">
@@ -139,7 +135,6 @@ const TractionSection = () => {
             </Card>
           </motion.div>
 
-          {/* Validation Evidence */}
           <motion.div variants={itemVariants}>
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-primary-600 to-trust-600 text-white">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

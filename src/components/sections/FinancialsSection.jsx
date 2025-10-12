@@ -12,7 +12,7 @@ const FinancialsSection = () => {
 
   const revenueProjection = financialData.revenue.map(item => ({
     year: item.year,
-    revenue: item.arr / 100000, // Convert to lakhs
+    revenue: item.arr / 100000, 
     customers: item.customers
   }));
 
@@ -46,7 +46,7 @@ const FinancialsSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
+          
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-secondary-100 px-4 py-2 rounded-full mb-6">
               <BarChart3 className="w-5 h-5 text-secondary-600" />
@@ -62,7 +62,7 @@ const FinancialsSection = () => {
             </p>
           </motion.div>
 
-          {/* Key Financial Metrics */}
+          
           <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="p-8 text-center" hover={true}>
               <div className="text-4xl lg:text-5xl font-bold gradient-text mb-4">
@@ -111,7 +111,7 @@ const FinancialsSection = () => {
             </Card>
           </motion.div>
 
-          {/* Revenue Projection Chart */}
+          
           <motion.div variants={itemVariants} className="mb-16">
             <Card className="p-8">
               <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-8">
@@ -149,7 +149,7 @@ const FinancialsSection = () => {
             </Card>
           </motion.div>
 
-          {/* Funding Requirements */}
+          
           <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <Card className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Funding Ask</h3>
@@ -213,7 +213,7 @@ const FinancialsSection = () => {
             </Card>
           </motion.div>
 
-          {/* Financial Highlights */}
+          
           <motion.div variants={itemVariants}>
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-secondary-600 to-primary-600 text-white">
               <h3 className="text-3xl lg:text-4xl font-bold text-center mb-12">

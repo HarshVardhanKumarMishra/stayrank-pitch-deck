@@ -16,7 +16,6 @@ const TeamMemberCard = ({ member, index }) => {
     >
       <Card className="team-card-enhanced text-center">
         <div className="relative mb-6">
-          {/* Team Member Photo */}
           <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full border-4 border-primary-100">
             {loaded && !error ? (
               <img
@@ -31,7 +30,6 @@ const TeamMemberCard = ({ member, index }) => {
             )}
           </div>
 
-          {/* Loading/Error States */}
           {!loaded && !error && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="spinner"></div>
@@ -119,7 +117,6 @@ const TeamSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-trust-100 px-4 py-2 rounded-full mb-6">
               <Users className="w-5 h-5 text-trust-600" />
@@ -134,7 +131,6 @@ const TeamSection = () => {
               A passionate team with deep industry expertise and proven track record in hospitality and technology
             </p>
 
-            {/* Team Culture Image */}
             {teamImageLoaded && (
               <motion.div
                 className="relative max-w-4xl mx-auto mb-16"
@@ -158,14 +154,12 @@ const TeamSection = () => {
             )}
           </motion.div>
 
-          {/* Team Members */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {teamData.members.map((member, index) => (
               <TeamMemberCard key={index} member={member} index={index} />
             ))}
           </motion.div>
 
-          {/* Team Strengths */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <Card className="p-8 text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-safety-500 to-safety-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -204,7 +198,6 @@ const TeamSection = () => {
             </Card>
           </motion.div>
 
-          {/* Advisory Board */}
           <motion.div variants={itemVariants}>
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-trust-600 to-primary-600 text-white">
               <h3 className="text-3xl lg:text-4xl font-bold text-center mb-12">

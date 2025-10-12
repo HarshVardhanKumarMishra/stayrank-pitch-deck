@@ -15,7 +15,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
     const mailtoLink = `mailto:hello@stayrank.com?subject=Investment Inquiry from ${formData.name}&body=${formData.message}`;
     window.open(mailtoLink);
   };
@@ -53,7 +52,7 @@ const ContactSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
+          
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <Mail className="w-5 h-5 text-secondary-300" />
@@ -70,7 +69,7 @@ const ContactSection = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+           
             <motion.div variants={itemVariants}>
               <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20">
                 <h3 className="text-2xl font-bold text-white mb-6">
@@ -152,7 +151,7 @@ const ContactSection = () => {
               </Card>
             </motion.div>
 
-            {/* Contact Information */}
+            
             <motion.div variants={itemVariants} className="space-y-8">
               <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20">
                 <h3 className="text-2xl font-bold text-white mb-6">
@@ -204,7 +203,7 @@ const ContactSection = () => {
                 </div>
               </Card>
 
-              {/* Quick Actions */}
+            
               <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20">
                 <h3 className="text-2xl font-bold text-white mb-6">
                   Quick Actions
@@ -235,7 +234,7 @@ const ContactSection = () => {
             </motion.div>
           </div>
 
-          {/* CTA Section */}
+         
           <motion.div variants={itemVariants} className="text-center mt-16">
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-secondary-600 to-primary-600 border-none">
               <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">

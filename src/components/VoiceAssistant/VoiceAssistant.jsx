@@ -8,7 +8,6 @@ export default function VoiceAssistant() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Floating button */}
       <button
         onClick={() => setOpen((v) => !v)}
         className="rounded-full shadow-lg p-4 bg-blue-600 text-white hover:bg-blue-700 transition"
@@ -17,7 +16,6 @@ export default function VoiceAssistant() {
         🎤
       </button>
 
-      {/* Chat window */}
       {open && <ChatWindow onClose={() => setOpen(false)} transcript={transcript} />}
     </div>
   );

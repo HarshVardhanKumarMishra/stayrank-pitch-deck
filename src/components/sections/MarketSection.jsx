@@ -53,7 +53,6 @@ const MarketSection = () => {
           initial="hidden"
           animate={hasIntersected ? "visible" : "hidden"}
         >
-          {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 bg-trust-100 px-4 py-2 rounded-full mb-6">
               <TrendingUp className="w-5 h-5 text-trust-600" />
@@ -64,7 +63,6 @@ const MarketSection = () => {
               {marketData.title}
             </h2>
 
-            {/* Market Size Cards */}
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <Card className="p-6 text-center">
@@ -91,7 +89,6 @@ const MarketSection = () => {
             </div>
           </motion.div>
 
-          {/* Market Context Image */}
           {backgroundImageLoaded && (
             <motion.div 
               variants={itemVariants}
@@ -118,7 +115,6 @@ const MarketSection = () => {
             </motion.div>
           )}
 
-          {/* Market Growth Chart */}
           <motion.div variants={itemVariants} className="mb-16">
             <Card className="p-8">
               <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-8">
@@ -152,7 +148,6 @@ const MarketSection = () => {
             </Card>
           </motion.div>
 
-          {/* Key Statistics */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {marketData.stats.map((stat, index) => (
               <Card key={index} className="p-8 text-center" hover={true}>
@@ -178,7 +173,6 @@ const MarketSection = () => {
             ))}
           </motion.div>
 
-          {/* Market Segments */}
           <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <Card className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Market Segments</h3>
@@ -224,7 +218,6 @@ const MarketSection = () => {
             </Card>
           </motion.div>
 
-          {/* Market Validation */}
           <motion.div variants={itemVariants}>
             <Card className="p-8 lg:p-12 bg-gradient-to-r from-trust-600 to-primary-600 text-white">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
