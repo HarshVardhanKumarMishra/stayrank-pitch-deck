@@ -74,7 +74,7 @@ function App() {
 
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
               <p>&copy; 2025 StayRank, powered by Lodging Innovations Pvt. Ltd. All rights reserved.</p>
-              <p>Designed and Developed by Harsh Vardhan Kumar Mishra</p>
+              <p>Designed and Developed by Anurag Rana</p>
             </div>
           </div>
         </footer>
